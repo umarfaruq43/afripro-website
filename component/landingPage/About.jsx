@@ -37,7 +37,6 @@ const About = () => {
                                 About us
                             </Text>
                             <Text
-                                
                                 color="brand.orange"
                                 fontWeight="500"
                                 fontSize={"20px"}
@@ -88,7 +87,7 @@ const About = () => {
                     <Flex w={["100%", null, "auto"]}>
                         <Image
                             src="/images/about/aboutUs.svg"
-                            alt="Image about Afripro"
+                            alt="Image about Afri-Pro"
                             w="100%"
                         />
                     </Flex>

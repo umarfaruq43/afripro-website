@@ -11,7 +11,7 @@ import {
 } from "@chakra-ui/react";
 import React from "react";
 import { BsEnvelopeFill, BsGeoAltFill, BsTelephoneFill } from "react-icons/bs";
-import { FaEnvelope } from "react-icons/fa";
+import { FaEnvelope, FaLinkedin, FaTwitter } from "react-icons/fa";
 import ScreenWidth from "../Layout/ScreenWidth";
 
 const Footer = () => {
@@ -24,8 +24,8 @@ const Footer = () => {
                     flexDir={["column", null, "row"]}
                     justify="space-between"
                 >
-                    <Box minW={[null, "200px", "236px"]}>
-                        <Image src="/images/LightLogo.svg" alt="" w="141px" />
+                    <Box minW={[null, "200px", "236px"]} >
+                        <Image src="/images/LightLogo.svg" alt="" w="237px" />
                         <Text
                             align="justify"
                             fontWeight="400"
@@ -124,13 +124,31 @@ const Footer = () => {
                             </Link>
 
                             <Link
-                                href="/contact#location"
+                                href="https://www.linkedin.com/company/afri-pro-services/about/?viewAsMember=true"
                                 mb="16px"
                                 color="brand.veryDimWhite"
                             >
                                 <Flex align="center" gap="12px">
                                     <Icon as={BsGeoAltFill} />{" "}
                                     <Text align="justify">Location</Text>
+                                </Flex>
+                            </Link>
+
+                            <Link
+                                href="https://twitter.com/AfriProServices"
+                                mb="16px"
+                                color="brand.veryDimWhite"
+                            >
+                                <Flex align="center" gap="12px">
+                                    <Icon as={FaLinkedin} />{" "}
+                                    <Text align="justify">Linkedin</Text>
+                                </Flex>
+                            </Link>
+
+                            <Link href="" mb="16px" color="brand.veryDimWhite">
+                                <Flex align="center" gap="12px">
+                                    <Icon as={FaTwitter} />{" "}
+                                    <Text align="justify">Twitter</Text>
                                 </Flex>
                             </Link>
                         </Flex>
@@ -197,6 +215,14 @@ const footerMenu3 = [
     {
         href: "+255789121119",
         text: "+255 789 121 119",
+    },
+    {
+        href: "",
+        text: "Location",
+    },
+    {
+        href: "",
+        text: "Location",
     },
     {
         href: "",

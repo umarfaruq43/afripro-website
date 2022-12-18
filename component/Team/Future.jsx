@@ -19,7 +19,7 @@ const Future = () => {
                             fontSize={["16px", null, "18px"]}
                         >
                             <Text
-                                align="justify"
+                                
                                 fontWeight="400"
                                 fontSize={["xl2", null, "4l"]}
                             >

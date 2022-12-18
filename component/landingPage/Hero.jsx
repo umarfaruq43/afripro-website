@@ -22,11 +22,7 @@ const Hero = () => {
                         pt={["85px", null, "115"]}
                         textAlign={["center", null, "left"]}
                     >
-                        <Text
-                            
-                            fontSize={["32px", null, "5xl"]}
-                            fontWeight="700"
-                        >
+                        <Text fontSize={["32px", null, "5xl"]} fontWeight="700">
                             Providing Advanced Cybersecurity Services
                         </Text>
                         <Text
@@ -34,9 +30,9 @@ const Hero = () => {
                             fontSize={["18px", null, "xl2"]}
                             mt="5"
                         >
-                            We are focussed on improving our clients’ cyber
+                            We are focused on improving our client’s cyber
                             resilience, and ultimately enabling them to protect
-                            their business and withstand, cyber-attacks.
+                            their business and withstand cyber-attacks
                         </Text>
 
                         <Box mt="12">

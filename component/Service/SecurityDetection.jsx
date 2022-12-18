@@ -44,6 +44,7 @@ const Detection = () => {
             align="center"
             gap="32px"
             py={["40px", null, "80px"]}
+	    id="monitoring"
         >
             <Box w={["100%", null, "50%"]}>
                 {" "}
@@ -95,6 +96,7 @@ const ManageSecurity = ({ ...props }) => {
             justify="space-between"
             align="center"
             gap="32px"
+	    id="manageSec"
         >
             <Box w={["100%", null, "50%"]}>
                 <Box
@@ -152,6 +154,7 @@ const Value = ({ ...props }) => {
             justify="space-between"
             align="center"
             gap="32px"
+	    id="valueIntegration"
         >
             <Box>
                 <Image src="images/service/value.svg" alt="value Image" />

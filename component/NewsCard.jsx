@@ -50,7 +50,6 @@ const NewsCard = ({ photo_name, created_at, title, slug, id }) => {
             </Box>
             <Box pt="20px" pb="32px" px="20px">
                 <Text
-                    align="justify"
                     fontSize="14px"
                     fontWeight="400"
                     color="brand.verylightGray"
@@ -58,7 +57,6 @@ const NewsCard = ({ photo_name, created_at, title, slug, id }) => {
                     {newdate}
                 </Text>
                 <Text
-                    align="justify"
                     color="brand.blue"
                     fontSize={["16px", null, "20px"]}
                     mt="16px"

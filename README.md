@@ -1,3 +1,3 @@
-# Afripro website
+# Afri-Pro website
 
-Afripro website - None
+Afri-Pro website - None

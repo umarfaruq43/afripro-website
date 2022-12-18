@@ -9,6 +9,7 @@ const Partners = () => {
             bgImage="images/partnersIllustion.svg"
             bgRepeat="no-repeat"
             bgPosition="bottom left"
+            id="portfolio"
         >
             <ScreenWidth>
                 <Flex
@@ -42,7 +43,6 @@ const Partners = () => {
                             multinational such as
                         </Text>
                     </Box>
-
                     <Flex
                         p="10"
                         mt={["5", "10"]}

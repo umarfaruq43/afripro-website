@@ -26,10 +26,10 @@ const Layout = ({ children, title }) => {
         console.log(color);
     });
     return (
-        <Box overflowX="hidden">
+        <Box overflowX="hidden" overflowY={"auto"}>
             <Head>
                 <title>{title}</title>
-                <meta name="description" content="Afripro" />
+                <meta name="description" content="Afri-Pro" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <Box fontFamily="dmSans">

@@ -32,7 +32,7 @@ const Team = () => {
                         fontWeight={"700"}
                         mt="8px"
                     >
-                        Trusted Afripros Cybersecurity Team
+                        Trusted Afri-Pros Cybersecurity Team
                     </Text>
 
                     {/* Teams Profile */}

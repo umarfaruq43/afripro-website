@@ -13,6 +13,7 @@ import {
     Textarea,
     Checkbox,
     useToast,
+    Link,
 } from "@chakra-ui/react";
 import { ButtonFill } from "../Buttons";
 import PhoneInput from "react-phone-input-2";
@@ -139,7 +140,8 @@ const ContactForm = () => {
                     fontSize={["sm", "md", "lg"]}
                     color="brand.lightGray"
                 >
-                    Gain access to our advanced Advanced Cybersecurity Services
+                    Gain access To experience our advanced cybersecurity
+                    services
                 </Text>
                 <Box>
                     <form onSubmit={handleSubmit(onSubmit)}>
@@ -358,10 +360,13 @@ const ContactForm = () => {
                             <Checkbox size="lg" checked>
                                 <Text align="justify" fontSize={["sm"]}>
                                     {" "}
-                                    I have read the Privacy Policy and agree
-                                    with the processing of my data provided
-                                    above by the Afripro according to the
-                                    policy.
+                                    I have read the{" "}
+                                    <Link color="brand.orange" href="/policy">
+                                        Privacy Policy
+                                    </Link>{" "}
+                                    and agree with the processing of my data
+                                    provided above by the Afri-Pro according to
+                                    the policy.
                                 </Text>
                             </Checkbox>
                         </Flex>

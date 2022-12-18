@@ -50,7 +50,7 @@ const Map = () => {
                             You can find us anytime
                         </Text>
 
-                        <Box my="40px">
+                        {/* <Box my="40px">
                             <Link href="#">
                                 <ButtonFill
                                     blue="true"
@@ -58,7 +58,7 @@ const Map = () => {
                                     text="GET DIRECTION"
                                 />
                             </Link>
-                        </Box>
+                        </Box> */}
 
                         <Box>
                             <Text

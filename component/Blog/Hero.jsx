@@ -34,7 +34,7 @@ const Hero = () => {
                             fontWeight="400"
                             maxW={["100%", null, "766px"]}
                         >
-                            In theAfripro blog, you will find helpful
+                            In theAfri-Pro blog, you will find helpful
                             information security articles, trends in
                             cybersecurity, and insight on threats and cyber
                             attacks. Our team of information security experts, a

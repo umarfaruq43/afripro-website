@@ -52,7 +52,7 @@ const Security = () => {
             flexDir={["column", null, "row"]}
             justify="space-between"
             align="center"
-            gap="32px"
+            gap="80px"
             py={["25px", null, "51px"]}
         >
             <Box w={["100%", null, "50%"]}>
@@ -87,7 +87,7 @@ const Security = () => {
                 </Box>
             </Box>
             <Box>
-                <Image src="images/Team/future.png" alt="Future Image" />
+                <Image src="images/service/future.png" alt="Future Image" />
             </Box>
         </Flex>
     );
@@ -173,7 +173,6 @@ const WebAndMobile = ({ ...others }) => {
                             fontSize={["16px", null, "18px"]}
                         >
                             <Text
-                                
                                 fontWeight="400"
                                 fontSize={["xl2", null, "4l"]}
                             >
@@ -297,12 +296,7 @@ const Cloud = ({ ...others }) => {
                             >
                                 Our Cloud Configuration
                             </Text>
-                            {/*<Text align='justify' color="brand.orange" mt="16px">
-                                With the cloud adoption at the forefront of
-                                organization’s digital transformation, we are
-                                helping our clients with implementing adequate
-                                security controls in their cloud journey.
-                            </Text> */}
+                           
 
                             <Text align="justify" mt="16px">
                                 {/* With our cloud configuration assessment service,
@@ -416,7 +410,7 @@ const Device = ({ ...others }) => {
 
 const SocialEng = ({ ...others }) => {
     return (
-        <Box {...others} id="cloud">
+        <Box {...others} id="assesment">
             <ScreenWidth>
                 <Flex
                     flexDir={["column", null, "row"]}
@@ -442,7 +436,7 @@ const SocialEng = ({ ...others }) => {
                                 fontWeight="400"
                                 fontSize={["xl2", null, "4l"]}
                             >
-                                Social Engineering Assessment:
+                                Social Engineering Assessment
                             </Text>
 
                             <Text align="justify" mt="16px">
@@ -482,7 +476,6 @@ const SecApproach = ({ ...others }) => {
                             fontSize={["16px", null, "18px"]}
                         >
                             <Text
-                                
                                 fontWeight="400"
                                 fontSize={["xl2", null, "32px"]}
                             >

@@ -3,7 +3,7 @@ import Layout from "../Layout/Layout";
 
 const Home = () => {
     return (
-        <Layout title={"Afripro"}>
+        <Layout title={"Afri-Pro"}>
             <LandingPage />
         </Layout>
     );

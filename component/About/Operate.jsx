@@ -25,7 +25,7 @@ const Operate = () => {
                         >
                             <Image
                                 src="/images/about/operate.svg"
-                                alt=" Afripro Logo Frame"
+                                alt=" Afri-Pro Logo Frame"
                                 h={["300px", null, "483px"]}
                             />
                         </Flex>
@@ -64,7 +64,7 @@ const Operate = () => {
                                 </Text>
                                 <Text
                                     align="justify"
-                                    maxW={["100%", null, "415px"]}
+                                    maxW={["100%", null, "612px"]}
                                 >
                                     All our Security assessment project is
                                     accompanied with a comprehensively

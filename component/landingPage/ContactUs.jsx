@@ -46,8 +46,8 @@ const ContactUs = () => {
                                 fontSize={["md", null, "lg"]}
                                 fontWeight="400"
                             >
-                                Gain access to our advanced Advanced
-                                Cybersecurity Services
+                                Gain access To experience our advanced
+                                cybersecurity services
                             </Text>
                         </Box>
                     </Flex>

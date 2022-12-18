@@ -51,7 +51,7 @@ const Ambition = () => {
                             </Text>
                             <Box mt="40px">
                                 <Link
-                                    href="/contact#form"
+                                    href="mailto:hr@afripro.co.tz"
                                     _hover={{ textDecor: "none" }}
                                 >
                                     <ButtonFill

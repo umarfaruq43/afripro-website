@@ -4,7 +4,7 @@ import Layout from "../Layout/Layout";
 
 const about = () => {
     return (
-        <Layout title={"About Afripro"}>
+        <Layout title={"About Afri-Pro"}>
             <About />
         </Layout>
     );

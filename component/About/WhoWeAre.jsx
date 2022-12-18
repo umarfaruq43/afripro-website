@@ -32,7 +32,7 @@ const WhoWeAre = () => {
                                 {" "}
                                 Who we are
                             </Text>
-                            <Box maxW={["100%", null, "415px"]}>
+                            <Box maxW={["100%", null, "612px"]}>
                                 <Text align="justify">
                                     Afri-Pro Services Ltd is a technology
                                     oriented professional services firm fully
@@ -76,7 +76,7 @@ const WhoWeAre = () => {
                     >
                         <Image
                             src="/images/about/logoFrame.svg"
-                            alt=" Afripro Logo Frame"
+                            alt=" Afri-Pro Logo Frame"
                         />
                     </Flex>
                 </Flex>
