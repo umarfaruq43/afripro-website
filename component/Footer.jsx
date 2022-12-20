@@ -205,7 +205,7 @@ const footerMenu2 = [
     },
     {
         href: "/team",
-        text: "Meet the team",
+        text: "Join the team",
     },
 ];
 
