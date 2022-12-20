@@ -221,7 +221,7 @@ const ServiceContent = ({ active, activeContent, setActiveContent }) => {
     active == 3 ? setActiveContent(serviceDetails_3) : null;
     return (
         <Box mt="10">
-            <SimpleGrid minChildWidth={["320px", null, "300px"]} gap="32px">
+            <SimpleGrid minChildWidth={["320px", null, "310px"]} gap="32px">
                 {activeContent.map(({ title, href, details, image }, i) => {
                     return (
                         // <Box >
@@ -264,7 +264,6 @@ const ServiceCard = ({ title, href, details, image }) => {
         >
             <Image src={image} alt="service Illustration Image" />
             <Text
-                
                 mt="40px"
                 mb=""
                 fontWeight="400"

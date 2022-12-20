@@ -12,33 +12,18 @@ import ScreenWidth from "../../Layout/ScreenWidth";
 
 const OffensiveSecurity = () => {
     return (
-        <Box mt="40px">
-            <ScreenWidth>
-                <Security />
-                <Divider
-                    my={["20px", null, "64px"]}
-                    color="brand.veryDimWhite 	"
-                />
-
-                <Text
-                    align="justify"
-                    fontSize={["lg", null, "xl2"]}
-                    fontWeight={[400, null, 500]}
-                >
-                    Our offensive security services are detailed below
-                </Text>
-            </ScreenWidth>
-            <Box mt="32px">
+        <Box>
+            <Box>
                 <VulnerabilityAssessments />
 
-                <WebAndMobile mt="56px" />
+                <WebAndMobile mt={["10px", null, "-30px"]} />
 
-                <Network mt="56px" />
+                <Network mt={["10px", null, "-30px"]} />
 
-                <Cloud mt="56px" />
-                <Device mt="56px" />
-                <SocialEng mt="56px" />
-                <SecApproach my="56px" />
+                <Cloud mt={["10px", null, "-30px"]} />
+                <Device mt={["10px", null, "-30px"]} />
+                <SocialEng mt={["10px", null, "-30px"]} />
+                <SecApproach mt={["10px", null, "30px"]} mb="20px" />
             </Box>
         </Box>
     );
@@ -191,7 +176,7 @@ const WebAndMobile = ({ ...others }) => {
                                 applications, APIs and everything in between, we
                                 can provide you with extensive testing on all of
                                 your application types and corresponding
-                                infrastructure
+                                infrastructure.
                             </Text>
                         </Box>
                     </Box>
@@ -294,22 +279,11 @@ const Cloud = ({ ...others }) => {
                                 fontWeight="400"
                                 fontSize={["xl2", null, "4l"]}
                             >
-                                Our Cloud Configuration
+                                Cloud Configuration
                             </Text>
-                           
 
                             <Text align="justify" mt="16px">
-                                {/* With our cloud configuration assessment service,
-                                we assess the configuration and security of your
-                                chosen cloud environment to identify and
-                                highlight weaknesses that may lead to the
-                                compromise of your cloud environment, and
-                                systems and infrastructure hosted in your cloud
-                                environment. With this service, we review both
-                                public and private cloud environment, by
-                                focusing on the cloud specific aspects, as well
-                                as the applications and. Infrastructure hosted
-                                within the cloud instance. */}
+                               
                                 With the cloud adoption at the forefront of
                                 organization’s digital transformation, we are
                                 helping our clients with implementing adequate
@@ -526,7 +500,7 @@ const SecApproach = ({ ...others }) => {
                                     </Text>
                                 </Box>
 
-                                <Box mt="62px">
+                                <Box mt="26px">
                                     <Text align="justify" fontSize="24px">
                                         Technical Management
                                     </Text>
@@ -541,7 +515,7 @@ const SecApproach = ({ ...others }) => {
                                     </Text>
                                 </Box>
 
-                                <Box mt="62px">
+                                <Box mt="26px">
                                     <Text align="justify" fontSize="24px">
                                         System Administrators
                                     </Text>

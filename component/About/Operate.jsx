@@ -4,7 +4,7 @@ import ScreenWidth from "../../Layout/ScreenWidth";
 
 const Operate = () => {
     return (
-        <Box>
+        <Box id="choose">
             <Box
                 py={["64px", null, "96px"]}
                 bgImage={[
@@ -43,40 +43,30 @@ const Operate = () => {
                                     fontSize={["24px", null, "36px"]}
                                 >
                                     {" "}
-                                    How we{" "}
+                                    Why Choose{" "}
                                     <Text
                                         align="justify"
                                         as="span"
                                         color="brand.orange"
                                     >
                                         {" "}
-                                        operate
+                                        Us
                                     </Text>
                                 </Text>
-                                <Text
-                                    align="justify"
-                                    fontWeight="500"
-                                    mb={["16px", null, "24px"]}
-                                    fontSize="22px"
-                                >
-                                    {" "}
-                                    Our Assessment Report
-                                </Text>
+                               
                                 <Text
                                     align="justify"
                                     maxW={["100%", null, "612px"]}
                                 >
-                                    All our Security assessment project is
-                                    accompanied with a comprehensively
-                                    documented report that shows the findings;
-                                    detailing the description of the
-                                    vulnerabilities identified, the consequences
-                                    of the vulnerabilities if exploited, our
-                                    recommendation for closing the gaps, and
-                                    evidence of the exploitation of the
-                                    vulnerabilities identified. Our report is
-                                    addressed to 3 relevant stakeholders’ levels
-                                    within your organization.
+                                    Cyber security is all that we do, helping
+                                    you secure your information technology
+                                    assets and protecting your business is our
+                                    priority. We are a team of highly dedicated
+                                    security specialists, powered by strategic
+                                    and emerging security vendor partners,
+                                    helping us fully focus on protecting our
+                                    clients across different verticals and
+                                    industries.
                                 </Text>
                             </Box>
                         </Flex>

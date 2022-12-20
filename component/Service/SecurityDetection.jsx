@@ -14,21 +14,11 @@ const SecurityDetection = () => {
     return (
         <Box id="detect">
             <ScreenWidth>
-                <Text
-                    align="justify"
-                    fontWeight="500"
-                    fontSize={["xl2", null, "32px"]}
-                    pt={["25px", null, "60px"]}
-                    pb={["14px", null, "44px"]}
-                >
-                    Security Detection & Response
-                </Text>
-                <Divider mb={["12px", null, "24px"]} />
                 <Detection />
-                <Value mt={["32px", null, "64px"]} />
-                <ManageSecurity mt={["32px", null, "64px"]} />
-                <ThreatSecurity mt="56px" />
-                <IncidentResponse mt="56px" />
+                <Value mt={["10px", null, "-30px"]} />
+                <ManageSecurity mt={["10px", null, "-30px"]} />
+                <ThreatSecurity mt={["10px", null, "-30px"]} />
+                <IncidentResponse mt={["10px", null, "10px"]} />
             </ScreenWidth>
         </Box>
     );
@@ -43,8 +33,8 @@ const Detection = () => {
             justify="space-between"
             align="center"
             gap="32px"
-            py={["40px", null, "80px"]}
-	    id="monitoring"
+            py={["20px", null, "60px"]}
+            id="monitoring"
         >
             <Box w={["100%", null, "50%"]}>
                 {" "}
@@ -96,7 +86,7 @@ const ManageSecurity = ({ ...props }) => {
             justify="space-between"
             align="center"
             gap="32px"
-	    id="manageSec"
+            id="manageSec"
         >
             <Box w={["100%", null, "50%"]}>
                 <Box
@@ -123,13 +113,13 @@ const ManageSecurity = ({ ...props }) => {
                             help with managing your organization’s security from
                             our certified 24/7 SOC to relieve your stretched
                             team of the responsibilities of day-to-day security
-                            management and focus on value-add core business
+                            management and focus on value-added core business
                             operation activities.
                         </Text>
                         <Text align="justify" mt="8px">
                             Afri-Pro Services provides a range of managed
                             services delivered from our 24/7 Security Operations
-                            Centre (SOC) called{" "}
+                            Centre (SOC) called
                             <Text align="justify" as="span" fontWeight="bold">
                                 “Logik Lab”
                             </Text>
@@ -154,7 +144,7 @@ const Value = ({ ...props }) => {
             justify="space-between"
             align="center"
             gap="32px"
-	    id="valueIntegration"
+            id="valueIntegration"
         >
             <Box>
                 <Image src="images/service/value.svg" alt="value Image" />
@@ -261,7 +251,7 @@ const IncidentResponse = ({ ...props }) => {
 
                     <Box fontSize="18px">
                         <Text align="justify" mt="24px">
-                            {" Afri-Pro's "}Incident Response (IR) and digital
+                            {`Afri-Pro's`} Incident Response (IR) and digital
                             forensics team delivers cutting edge services of
                             cyber security incident response through our expert
                             CIRT team to organizations to help minimize and

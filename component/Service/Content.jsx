@@ -22,19 +22,31 @@ import JoinTeam from "../JoinTeam";
 import SecurityDetection from "./SecurityDetection";
 import SecurityAdvisory from "./SecurityAdvisory";
 import { useRouter } from "next/router";
+import { useCurrent } from "../../context/Context";
 const Content = () => {
+    const { setActive, active } = useCurrent();
     const router = useRouter();
-    const [active, setActive] = useState(1);
+    //     const [active, setActive] = useState(1);
     const handleActive = (activeNumber) => {
         setActive(activeNumber);
     };
-    useEffect(() => {
-        if (router && router.asPath == "/service#detect") {
-            setActive(2);
-        } else if (router && router.asPath == "/service#advisory") {
-            setActive(3);
-        }
-    }, []);
+    //     useEffect(() => {
+    //         if (
+    //             (router && router.asPath == "/service#detect") ||
+    //             (router && router.asPath == "/service#valueIntegration") ||
+    //             (router && router.asPath == "/service#manageSec") ||
+    //             (router && router.asPath == "/service#intelligence")
+    //         ) {
+    //             setActive(2);
+    //         } else if (
+    //             (router && router.asPath == "/service#review") ||
+    //             (router && router.asPath == "/service#secStandard") ||
+    //             (router && router.asPath == "/service#augmentation") ||
+    //             (router && router.asPath == "/service#secureDesign")
+    //         ) {
+    //             setActive(3);
+    //         }
+    //     }, []);
 
     return (
         <Box>

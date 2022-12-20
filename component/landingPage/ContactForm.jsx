@@ -309,11 +309,17 @@ const ContactForm = () => {
                                     I would like to discuss....
                                 </option>
                                 <option value="BugReport">Report a bug</option>
-                                <option value="Security">
-                                    I need to secure my app
+                                <option value="I would like to discuss our security need">
+                                    I would like to discuss our security need
                                 </option>{" "}
-                                <option value="advice">
-                                    Please I need some advice.
+                                <option value=" I would like to report an incident">
+                                    Report an incident
+                                </option>{" "}
+                                <option value="I need to secure my organisation">
+                                    I need to secure my organisation
+                                </option>{" "}
+                                <option value="  I need some security advice">
+                                    I need some security advice
                                 </option>
                             </Select>
                         </FormControl>
@@ -329,7 +335,7 @@ const ContactForm = () => {
                             >
                                 Your Message
                             </FormLabel>
-                            <Text
+                            <Textarea
                                 align="justify"
                                 area
                                 id="message"

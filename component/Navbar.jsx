@@ -22,8 +22,10 @@ import {
 } from "@chakra-ui/react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { FiChevronDown } from "react-icons/fi";
+import { useCurrent } from "../context/Context";
 import ScreenWidth from "../Layout/ScreenWidth";
 import { ButtonFill } from "./Buttons";
+import NextLink from "next/link";
 
 const Navbar = ({ navbarColor }) => {
     const { isOpen, onToggle } = useDisclosure();
@@ -87,6 +89,7 @@ export default Navbar;
 // Desktop nav menu
 const DesktopNav = ({ navbarColor }) => {
     //  console.log(navbarColor);
+    const { active, setActive, handleService } = useCurrent();
     return (
         <Stack direction={"row"} spacing="6" align="center">
             {NAV_ITEMS.map((navItem, i) => {
@@ -195,14 +198,21 @@ const DesktopNav = ({ navbarColor }) => {
                                 >
                                     <Text fontWeight={500} fontSize={"14px"}>
                                         {" "}
-                                        Vulnerability Assessment
+                                        Offensive Security
                                     </Text>
                                     {item.children &&
                                         item.children.map((subMenu) => {
                                             return (
-                                                <Link
-                                                    key={subMenu.labe}
-                                                    href={subMenu.href}
+                                                <Box
+                                                    key={subMenu.label}
+                                                    //     href={subMenu.href}
+                                                    // py="12px"
+                                                    onClick={() =>
+                                                        handleService(
+                                                            subMenu.href,
+                                                            subMenu.active
+                                                        )
+                                                    }
                                                     // py="12px"
                                                     my="8px"
                                                     maxW="195px"
@@ -214,9 +224,10 @@ const DesktopNav = ({ navbarColor }) => {
                                                     _hover={{
                                                         color: "brand.orange",
                                                     }}
+                                                    cursor="pointer"
                                                 >
                                                     {subMenu.label}
-                                                </Link>
+                                                </Box>
                                             );
                                         })}
                                 </Box>
@@ -236,10 +247,16 @@ const DesktopNav = ({ navbarColor }) => {
                                     {item.children_2 &&
                                         item.children_2.map((subMenu) => {
                                             return (
-                                                <Link
-                                                    key={subMenu.labe}
-                                                    href={subMenu.href}
+                                                <Box
+                                                    key={subMenu.label}
+                                                    //     href={subMenu.href}
                                                     // py="12px"
+                                                    onClick={() =>
+                                                        handleService(
+                                                            subMenu.href,
+                                                            subMenu.active
+                                                        )
+                                                    }
                                                     my="8px"
                                                     maxW="195px"
                                                     // w="100%"
@@ -250,9 +267,10 @@ const DesktopNav = ({ navbarColor }) => {
                                                     _hover={{
                                                         color: "brand.orange",
                                                     }}
+                                                    cursor="pointer"
                                                 >
                                                     {subMenu.label}
-                                                </Link>
+                                                </Box>
                                             );
                                         })}
                                 </Box>
@@ -265,14 +283,21 @@ const DesktopNav = ({ navbarColor }) => {
                                     pb="20px"
                                 >
                                     <Text fontWeight={500} fontSize={"14px"}>
-                                        Vulnerability Assessment
+                                        Security Compliance and Advisory
                                     </Text>
                                     {item.children_3 &&
                                         item.children_3.map((subMenu) => {
                                             return (
-                                                <Link
-                                                    key={subMenu.labe}
-                                                    href={subMenu.href}
+                                                <Box
+                                                    key={subMenu.label}
+                                                    //     href={subMenu.href}
+                                                    // py="12px"
+                                                    onClick={() =>
+                                                        handleService(
+                                                            subMenu.href,
+                                                            subMenu.active
+                                                        )
+                                                    }
                                                     // py="12px"
                                                     my="8px"
                                                     maxW="195px"
@@ -284,9 +309,10 @@ const DesktopNav = ({ navbarColor }) => {
                                                     _hover={{
                                                         color: "brand.orange",
                                                     }}
+                                                    cursor="pointer"
                                                 >
                                                     {subMenu.label}
-                                                </Link>
+                                                </Box>
                                             );
                                         })}
                                 </Box>
@@ -360,13 +386,84 @@ const DesktopNav = ({ navbarColor }) => {
             })}
 
             {/* Contact us button  */}
-            <Link href="/contact" _hover={{ textDecoration: "none" }}>
+            {/* <Link href="/contact" _hover={{ textDecoration: "none" }}> */}
+
+            <Menu>
+                {/* <MenuButton
+                    as={Button}
+                    key={navItem.label}
+                    // p={2}
+                    display="flex"
+                    align="center"
+                    href={navItem.href ?? "#"}
+                    fontSize="14px"
+                    fontWeight={500}
+                    bg="transparent"
+                    color={navbarColor ? "brand.blue" : "brand.white"}
+                   
+                    rightIcon={<FiChevronDown />}
+                >
+                    {navItem.label}
+                </MenuButton> */}
                 <ButtonFill
+                    as={MenuButton}
                     text="Contact us"
                     blue={navbarColor ? true : false}
                     nav={true}
+                    _hover={{
+                        textDecoration: "none",
+                    }}
+                    _active={{
+                        bg: "",
+                    }}
+                    rightIcon={<FiChevronDown />}
                 />
-            </Link>
+
+                <MenuList bg="transparent" border="none">
+                    <Box
+                        bgColor="#fff"
+                        // maxW="206px"
+                        px="16px"
+                        // pt="14px"
+                        // pb="20px"
+                        shadow="2xl"
+                        border="1px"
+                        borderColor="brand.orange"
+                    >
+                        <Link
+                            href={"/contact#location"}
+                            py="12px"
+                            // w="100%"
+                            fontSize="14px"
+                            fontWeight="500"
+                            display="block"
+                            color="brand.deepBlue"
+                            _hover={{
+                                color: "brand.orange",
+                            }}
+                        >
+                            Address
+                        </Link>
+
+                        <Link
+                            href={"/contact"}
+                            py="12px"
+                            // w="100%"
+                            fontSize="14px"
+                            fontWeight="500"
+                            display="block"
+                            color="brand.deepBlue"
+                            _hover={{
+                                color: "brand.orange",
+                            }}
+                        >
+                            Contact
+                        </Link>
+                    </Box>
+                </MenuList>
+            </Menu>
+
+            {/* </Link> */}
         </Stack>
     );
 };
@@ -526,12 +623,11 @@ const MobileNavItem = ({ label, href, navbarColor }) => {
                                 >
                                     {/* Menu 1  */}
                                     <Box
-                                        w="100%"
-                                        minW="100%"
                                         bgColor="#fff"
                                         px="26px"
                                         pt="14px"
                                         pb="20px"
+                                        borderRight={"1px"}
                                         borderColor="#9299A2"
                                     >
                                         <Text
@@ -539,14 +635,21 @@ const MobileNavItem = ({ label, href, navbarColor }) => {
                                             fontSize={"14px"}
                                         >
                                             {" "}
-                                            Vulnerability Assessment
+                                            Offensive Security
                                         </Text>
                                         {item.children &&
                                             item.children.map((subMenu) => {
                                                 return (
-                                                    <Link
-                                                        key={subMenu.labe}
-                                                        href={subMenu.href}
+                                                    <Box
+                                                        key={subMenu.label}
+                                                        //     href={subMenu.href}
+                                                        // py="12px"
+                                                        onClick={() =>
+                                                            handleService(
+                                                                subMenu.href,
+                                                                subMenu.active
+                                                            )
+                                                        }
                                                         // py="12px"
                                                         my="8px"
                                                         maxW="195px"
@@ -558,20 +661,20 @@ const MobileNavItem = ({ label, href, navbarColor }) => {
                                                         _hover={{
                                                             color: "brand.orange",
                                                         }}
+                                                        cursor="pointer"
                                                     >
                                                         {subMenu.label}
-                                                    </Link>
+                                                    </Box>
                                                 );
                                             })}
                                     </Box>
                                     {/* Menu 2  */}
                                     <Box
-                                        minW="100%"
-                                        w="100%"
                                         bgColor="#fff"
                                         px="26px"
                                         pt="14px"
                                         pb="20px"
+                                        borderRight="1px"
                                         borderColor="#9299A2"
                                     >
                                         <Text
@@ -584,10 +687,16 @@ const MobileNavItem = ({ label, href, navbarColor }) => {
                                         {item.children_2 &&
                                             item.children_2.map((subMenu) => {
                                                 return (
-                                                    <Link
-                                                        key={subMenu.labe}
-                                                        href={subMenu.href}
+                                                    <Box
+                                                        key={subMenu.label}
+                                                        //     href={subMenu.href}
                                                         // py="12px"
+                                                        onClick={() =>
+                                                            handleService(
+                                                                subMenu.href,
+                                                                subMenu.active
+                                                            )
+                                                        }
                                                         my="8px"
                                                         maxW="195px"
                                                         // w="100%"
@@ -598,17 +707,16 @@ const MobileNavItem = ({ label, href, navbarColor }) => {
                                                         _hover={{
                                                             color: "brand.orange",
                                                         }}
+                                                        cursor="pointer"
                                                     >
                                                         {subMenu.label}
-                                                    </Link>
+                                                    </Box>
                                                 );
                                             })}
                                     </Box>
 
                                     {/* Menu 3  */}
                                     <Box
-                                        w="100%"
-                                        minW="100%"
                                         bgColor="#fff"
                                         px="26px"
                                         pt="14px"
@@ -618,14 +726,21 @@ const MobileNavItem = ({ label, href, navbarColor }) => {
                                             fontWeight={500}
                                             fontSize={"14px"}
                                         >
-                                            Vulnerability Assessment
+                                            Security Compliance and Advisory
                                         </Text>
-                                        {item.children &&
-                                            item.children.map((subMenu) => {
+                                        {item.children_3 &&
+                                            item.children_3.map((subMenu) => {
                                                 return (
-                                                    <Link
-                                                        key={subMenu.labe}
-                                                        href={subMenu.href}
+                                                    <Box
+                                                        key={subMenu.label}
+                                                        //     href={subMenu.href}
+                                                        // py="12px"
+                                                        onClick={() =>
+                                                            handleService(
+                                                                subMenu.href,
+                                                                subMenu.active
+                                                            )
+                                                        }
                                                         // py="12px"
                                                         my="8px"
                                                         maxW="195px"
@@ -637,9 +752,10 @@ const MobileNavItem = ({ label, href, navbarColor }) => {
                                                         _hover={{
                                                             color: "brand.orange",
                                                         }}
+                                                        cursor="pointer"
                                                     >
                                                         {subMenu.label}
-                                                    </Link>
+                                                    </Box>
                                                 );
                                             })}
                                     </Box>
@@ -731,7 +847,11 @@ const NAV_ITEMS = [
             },
             {
                 label: "Why Choose Us",
-                href: "/about",
+                href: "/about#choose",
+            },
+            {
+                label: "Our Expert Team",
+                href: "/about#team",
             },
             {
                 label: "Our Client Portfolio",
@@ -740,7 +860,7 @@ const NAV_ITEMS = [
 
             {
                 label: "Our Vendor Partners",
-                href: "/#portfolio",
+                href: "/#vendor",
             },
         ],
     },
@@ -752,73 +872,84 @@ const service = [
         href: "#",
         children: [
             {
+                label: "Vulnerability Assessment",
+                href: "/service#assessment",
+                active: 1,
+            },
+            {
                 label: "Web and Mobile Application Testing",
                 href: "/service#web",
+                active: 1,
             },
             {
                 label: "Internal and External Infrastructure Testing",
                 href: "/service#network",
+                active: 1,
             },
             {
                 label: "Cloud Configuration Assessment",
                 href: "/service#cloud",
+                active: 1,
             },
 
             {
                 label: "Network Devices Assessment",
                 href: "/service#device",
+                active: 1,
             },
             {
                 label: "Phishing and Social Engineering Assessment",
                 href: "/service#assesment",
+                active: 1,
             },
         ],
 
         children_2: [
             {
-                label: "Security Monitoring",
+                label: "Security Monitoring, Detection and Response",
                 href: "/service#monitoring",
+                active: 2,
             },
-            {
-                label: "Detection and Response",
-                href: "/service#monitoring",
-            },
+
             {
                 label: "Value Added System Integration",
                 href: "/service#valueIntegration",
+                active: 2,
             },
 
             {
                 label: "Managed Security Services",
                 href: "/service#manageSec",
+                active: 2,
             },
             {
                 label: "Threat Intelligence Services",
                 href: "/service#intelligence",
+                active: 2,
             },
         ],
 
         children_3: [
             {
-                label: "Web and Mobile Application Testing",
-                href: "#",
+                label: "Cyber Security Review",
+                href: "/service#review",
+                active: 3,
             },
             {
-                label: "Internal and External Infrastructure Testing",
-                href: "#",
+                label: "Security Standards Implementation and Certification",
+                href: "/service#secStandard",
+                active: 3,
             },
             {
-                label: "Cloud Configuration Assessment",
-                href: "#",
+                label: "Staff Augmentation",
+                href: "/service#augmentation",
+                active: 3,
             },
 
             {
-                label: "Network Devices Assessment",
-                href: "#",
-            },
-            {
-                label: "Phishing and Social Engineering Assessment",
-                href: "#",
+                label: "Secure by Design",
+                href: "/service#secureDesign",
+                active: 3,
             },
         ],
     },

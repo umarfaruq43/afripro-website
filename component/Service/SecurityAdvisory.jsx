@@ -13,21 +13,11 @@ import ScreenWidth from "../../Layout/ScreenWidth";
 const SecurityAdvisory = () => {
     return (
         <Box id="detect">
-            <ScreenWidth>
-                <Text
-                    
-                    fontWeight="500"
-                    fontSize={["xl2", null, "32px"]}
-                    pt={["25px", null, "60px"]}
-                    pb={["14px", null, "44px"]}
-                >
-                    Security Compliance and Advisory
-                </Text>
-                <Divider mb={["12px", null, "24px"]} />
+            <ScreenWidth py="50px">
                 <CyberSecurity />
-                <SecurityStandards mt="56px" />
-                <SecureDesign mt="56px" />
-                {/* <StaffAugmentation mt="56px" /> */}
+                <SecurityStandards mt={["10px", null, "-30px"]} />
+                <SecureDesign mt={["10px", null, "20px"]} />
+                <StaffAugmentation mt={["10px", null, "20px"]} />
             </ScreenWidth>
         </Box>
     );
@@ -42,7 +32,8 @@ const CyberSecurity = () => {
             justify="space-between"
             align="center"
             gap="32px"
-            py={["25px", null, "56px"]}
+        //     py={["25px", null, "56px"]}
+            id="review"
         >
             <Box w={["100%", null, "50%"]}>
                 {" "}
@@ -95,6 +86,7 @@ const SecurityStandards = ({ ...props }) => {
             justify="space-between"
             align="center"
             gap="32px"
+            id="secStandard"
         >
             <Box>
                 <Image
@@ -143,6 +135,7 @@ const SecureDesign = ({ ...props }) => {
             justify="space-between"
             align="center"
             gap="32px"
+            id="secureDesign"
         >
             <Box w={["100%", null, "50%"]}>
                 <Box
@@ -197,6 +190,7 @@ const StaffAugmentation = ({ ...props }) => {
             justify="space-between"
             align="center"
             gap="32px"
+            id="augmentation"
         >
             <Box>
                 <Image src="images/Team/future.png" alt="Future Image" />

@@ -7,6 +7,7 @@ import Blog from "./Blog";
 import ContactUs from "./ContactUs";
 import Hero from "./Hero";
 import JoinTeam from "../JoinTeam";
+import Vendor from "../Vendor";
 
 const LandingPage = () => {
    
@@ -16,6 +17,7 @@ const LandingPage = () => {
             <Service />
             <About />
             <Partners />
+            <Vendor />
             <ContactUs />
             <Blog />
             <JoinTeam />

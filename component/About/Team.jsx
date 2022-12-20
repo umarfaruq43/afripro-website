@@ -16,27 +16,8 @@ const Team = () => {
         <Box py={["64px", null, "80px"]}>
             <ScreenWidth>
                 <Box>
-                    <Text
-                        align="justify"
-                        fontSize={["sm", null, "xl"]}
-                        color="brand.orange"
-                        fontWeight={"500"}
-                    >
-                        {" "}
-                        Meet the team
-                    </Text>
-                    <Text
-                        align="justify"
-                        fontSize={["2xl", null, "4xl"]}
-                        color="brand.lightGray"
-                        fontWeight={"700"}
-                        mt="8px"
-                    >
-                        Trusted Afri-Pros Cybersecurity Team
-                    </Text>
-
                     {/* Teams Profile */}
-                    <SimpleGrid minChildWidth="250px" gap="32px" mt="32px">
+                    {/* <SimpleGrid minChildWidth="250px" gap="32px" mt="32px">
                         {profile.map(({ user, href, image, position }, i) => {
                             return (
                                 <ProfileCard
@@ -48,7 +29,9 @@ const Team = () => {
                                 />
                             );
                         })}
-                    </SimpleGrid>
+                    </SimpleGrid> */}
+
+                    <VulnerabilityAssessments />
                 </Box>
             </ScreenWidth>
         </Box>
@@ -131,3 +114,62 @@ const profile = [
         position: "Position",
     },
 ];
+
+const VulnerabilityAssessments = ({ ...others }) => {
+    return (
+        <Box {...others} id="vulnerability">
+            <ScreenWidth>
+                <Flex
+                    flexDir={["column-reverse", null, "row"]}
+                    justify="space-between"
+                    align="center"
+                    gap="32px"
+                >
+                    <Box w={["100%", null, "50%"]}>
+                        {" "}
+                        <Box
+                            maxW={["100%", null, "576px"]}
+                            fontSize={["16px", null, "18px"]}
+                        >
+                            <Text
+                                align="justify"
+                                fontSize={["2xl", null, "4xl"]}
+                                color="brand.lightGray"
+                                fontWeight={"700"}
+                                mt="8px"
+                            >
+                                Our Team
+                            </Text>
+
+                            <Text align="justify" mt="16px">
+                                Our team is made up of seasoned Cyber security
+                                experts with wealth of experience delivering
+                                advanced security services to our clients. Our
+                                team comprises of both industry experts in
+                                business and cyber security domains such as
+                                technical security testing, deploying, and
+                                configuring technical security controls, and
+                                developing and implementing Cyber Security
+                                strategies and roadmaps, facilitating the
+                                delivery of balanced security-oriented services
+                                to our clients. We have an exciting team of
+                                competent young and exciting professionals,
+                                supported by a team of experienced industry
+                                experts, providing leadership and expertise,
+                                thus facilitating an agile resourcing model for
+                                the delivery of our services.
+                            </Text>
+                        </Box>
+                    </Box>
+                    {/* *****Second Column***** */}
+                    <Box>
+                        <Image
+                            src="images/service/vunerability.svg"
+                            alt="Future Image"
+                        />
+                    </Box>
+                </Flex>
+            </ScreenWidth>
+        </Box>
+    );
+};

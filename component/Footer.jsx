@@ -24,7 +24,7 @@ const Footer = () => {
                     flexDir={["column", null, "row"]}
                     justify="space-between"
                 >
-                    <Box minW={[null, "200px", "236px"]} >
+                    <Box minW={[null, "200px", "236px"]}>
                         <Image src="/images/LightLogo.svg" alt="" w="237px" />
                         <Text
                             align="justify"
@@ -123,7 +123,7 @@ const Footer = () => {
                                 </Flex>
                             </Link>
 
-                            <Link
+                            {/* <Link
                                 href="https://www.linkedin.com/company/afri-pro-services/about/?viewAsMember=true"
                                 mb="16px"
                                 color="brand.veryDimWhite"
@@ -132,10 +132,10 @@ const Footer = () => {
                                     <Icon as={BsGeoAltFill} />{" "}
                                     <Text align="justify">Location</Text>
                                 </Flex>
-                            </Link>
+                            </Link> */}
 
                             <Link
-                                href="https://twitter.com/AfriProServices"
+                                href="https://www.linkedin.com/company/afri-pro-services/about/?viewAsMember=true"
                                 mb="16px"
                                 color="brand.veryDimWhite"
                             >
@@ -145,7 +145,11 @@ const Footer = () => {
                                 </Flex>
                             </Link>
 
-                            <Link href="" mb="16px" color="brand.veryDimWhite">
+                            <Link
+                                mb="16px"
+                                color="brand.veryDimWhite"
+                                href="https://twitter.com/AfriProServices"
+                            >
                                 <Flex align="center" gap="12px">
                                     <Icon as={FaTwitter} />{" "}
                                     <Text align="justify">Twitter</Text>
@@ -166,7 +170,7 @@ const Footer = () => {
                         fontSize="16px"
                         textAlign="center"
                     >
-                        © Copyright 2022 AFRIPRO.. All rights reserved | Privacy
+                        © Copyright 2022 AFRI-PRO. All rights reserved | Privacy
                         Policy
                     </Text>
                 </Flex>
@@ -187,7 +191,7 @@ const footerMenu = [
         text: "Detect & Respond",
     },
     {
-        href: "#",
+        href: "/service#review",
         text: "Security Compliance",
     },
 ];
@@ -216,16 +220,5 @@ const footerMenu3 = [
         href: "+255789121119",
         text: "+255 789 121 119",
     },
-    {
-        href: "",
-        text: "Location",
-    },
-    {
-        href: "",
-        text: "Location",
-    },
-    {
-        href: "",
-        text: "Location",
-    },
+    
 ];
