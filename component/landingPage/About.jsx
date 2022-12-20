@@ -78,7 +78,9 @@ const About = () => {
                                     text="MEET THE TEAM"
                                     fontSize="16px"
                                     style={{ width: "147px", height: "45px" }}
-                                    onClick={() => navigate.push("/team")}
+                                    onClick={() =>
+                                        navigate.push("/about#expertteam")
+                                    }
                                 />
                             </Flex>
                             {/* </SimpleGrid> */}

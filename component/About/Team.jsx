@@ -124,6 +124,7 @@ const VulnerabilityAssessments = ({ ...others }) => {
                     justify="space-between"
                     align="center"
                     gap="32px"
+		    id="expertteam"
                 >
                     <Box w={["100%", null, "50%"]}>
                         {" "}

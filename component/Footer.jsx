@@ -111,15 +111,13 @@ const Footer = () => {
                             </Link>
 
                             <Link
-                                href="tel:+255789121119"
+                                href="tel:+255746721790"
                                 mb="16px"
                                 color="brand.veryDimWhite"
                             >
                                 <Flex align="center" gap="12px">
                                     <Icon as={BsTelephoneFill} />{" "}
-                                    <Text align="justify">
-                                        +255 789 121 119
-                                    </Text>
+                                    <Text align="justify">+255746721790</Text>
                                 </Flex>
                             </Link>
 
@@ -217,8 +215,7 @@ const footerMenu3 = [
         text: "info@afripro.co.tz",
     },
     {
-        href: "+255789121119",
-        text: "+255 789 121 119",
+        href: "+255746721790",
+        text: "+255746721790",
     },
-    
 ];

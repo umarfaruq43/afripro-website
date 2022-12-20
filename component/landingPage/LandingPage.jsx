@@ -10,7 +10,6 @@ import JoinTeam from "../JoinTeam";
 import Vendor from "../Vendor";
 
 const LandingPage = () => {
-   
     return (
         <Box>
             <Hero />
