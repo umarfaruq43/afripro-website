@@ -11,8 +11,8 @@ const Location = () => {
     return (
         <div>
             <MapContainer
-                center={[51.505, -0.09]}
-                zoom={50}
+                center={[-6.7780556, 39.2497222]}
+                zoom={100}
                 scrollWheelZoom={false}
                 className="map"
             >
@@ -20,7 +20,7 @@ const Location = () => {
                     attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                 />
-                <Marker position={[51.505, -0.09]} icon={icon}>
+                <Marker position={[-6.7780556, 39.2497222]} icon={icon}>
                     <Popup>Afri-Pro Services</Popup>
                 </Marker>
             </MapContainer>

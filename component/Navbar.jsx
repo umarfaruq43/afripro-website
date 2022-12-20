@@ -961,16 +961,8 @@ const resources = [
         href: "#",
         children: [
             {
-                label: "Blog",
+                label: "Blogs, White Papers, Security News",
                 href: "/blog",
-            },
-            {
-                label: "White Papers",
-                href: "#",
-            },
-            {
-                label: "Security News",
-                href: "#",
             },
         ],
     },

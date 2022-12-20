@@ -46,7 +46,7 @@ const LatestNews = ({ news }) => {
                             }
                         </SimpleGrid>
                     </Box>
-                    <Flex mt="40px" justify="space-between">
+                    {/* <Flex mt="40px" justify="space-between">
                         <Flex
                             cursor="pointer"
                             align="center"
@@ -68,7 +68,7 @@ const LatestNews = ({ news }) => {
                             <Text align="justify">Next entries</Text>
                             <Icon as={BsArrowRight} ml="11.5px" />
                         </Flex>
-                    </Flex>
+                    </Flex> */}
                 </Box>
             </ScreenWidth>
         </Box>

@@ -7,11 +7,12 @@ import NewsCard from "../NewsCard";
 const Blog = () => {
     const [news, setNews] = useState(null);
     useEffect(() => {
-        fetch("https://demoafriproadmin.statainsight.com/api/blog")
+        fetch("https://demoafriproadmin.statainsight.com/api/flash-blog")
             .then((res) => res.json())
             .then((data) => setNews(data));
     }, []);
-    //     console.log();
+
+    console.log(news);
     return (
         <Box py="80px">
             <ScreenWidth>
@@ -38,28 +39,26 @@ const Blog = () => {
                     <Box mt="40px">
                         <SimpleGrid minChildWidth="250px" gap="40px">
                             {news &&
-                                news.blogs
-                                    .slice(0, 3)
-                                    .map(
-                                        ({
-                                            photo_name,
-                                            created_at,
-                                            title,
-                                            id,
-                                            slug,
-                                        }) => {
-                                            return (
-                                                <NewsCard
-                                                    key={id}
-                                                    id={id}
-                                                    photo_name={photo_name}
-                                                    created_at={created_at}
-                                                    slug={slug}
-                                                    title={title}
-                                                />
-                                            );
-                                        }
-                                    )}
+                                news.flash_blogs.map(
+                                    ({
+                                        photo_name,
+                                        created_at,
+                                        title,
+                                        id,
+                                        slug,
+                                    }) => {
+                                        return (
+                                            <NewsCard
+                                                key={id}
+                                                id={id}
+                                                photo_name={photo_name}
+                                                created_at={created_at}
+                                                slug={slug}
+                                                title={title}
+                                            />
+                                        );
+                                    }
+                                )}
                         </SimpleGrid>
                     </Box>
                     <Box mt="40px" textAlign={["center", null, "right"]}>

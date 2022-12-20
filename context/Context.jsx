@@ -18,7 +18,7 @@ const Context = ({ children }) => {
     };
     return (
         <ActiveNav.Provider value={values}>
-            ActiveNav
+            
             {children}
         </ActiveNav.Provider>
     );

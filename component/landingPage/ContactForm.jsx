@@ -367,7 +367,11 @@ const ContactForm = () => {
                                 <Text align="justify" fontSize={["sm"]}>
                                     {" "}
                                     I have read the{" "}
-                                    <Link color="brand.orange" href="/policy">
+                                    <Link
+                                        color="brand.orange"
+                                        target="_blank"
+                                        href="/policy"
+                                    >
                                         Privacy Policy
                                     </Link>{" "}
                                     and agree with the processing of my data
