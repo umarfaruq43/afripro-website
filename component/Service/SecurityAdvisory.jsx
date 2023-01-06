@@ -32,7 +32,7 @@ const CyberSecurity = () => {
             justify="space-between"
             align="center"
             gap="32px"
-        //     py={["25px", null, "56px"]}
+            //     py={["25px", null, "56px"]}
             id="review"
         >
             <Box w={["100%", null, "50%"]}>
@@ -106,19 +106,20 @@ const SecurityStandards = ({ ...props }) => {
 
                     <Box fontSize="18px">
                         <Text align="justify" mt="24px">
-                            This is a non-intrusive, automated, and regular test
-                            of our clients IT systems to identify security gaps,
-                            loopholes in your systems and networks.
-                        </Text>
-                        <Text align="justify" mt="24px">
-                            The severity and overall risks of these
-                            vulnerabilities are then measured and presented to
-                            our clients with the applicable recommendations to
-                            help remediate the vulnerabilities and protect their
-                            organization’s cyber security threats. We can help
-                            you identify the known and unknown vulnerabilities
-                            before they are discovered and exploited by the
-                            threat actors.
+                            Our Security Standards Implementation and
+                            Certification services focus on helping our clients
+                            with developing a comprehensive enterprise-wide
+                            security program and aligning the security programs
+                            with best practice standards. Our service looks at
+                            helping our clients comply and align with best
+                            practice frameworks and standards such as NIST, CIS,
+                            ISO27001, IS022301, GDPR, and PCI DSS. We offer
+                            services such as gap assessment against the
+                            identified standard and frameworks, we help
+                            organisations with the implementation of the
+                            standards and frameworks recommended security
+                            controls and help organisations getting certified
+                            against the above listed standards.
                         </Text>
                     </Box>
                 </Box>

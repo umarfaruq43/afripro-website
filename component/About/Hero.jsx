@@ -7,7 +7,7 @@ const Hero = () => {
             bgImage="/images/about/hero.png"
             bgPosition="center"
             bgSize="cover"
-            h={["324px", null, "512px"]}
+            h={["324px", null, "350px"]}
             align="center"
             justify="center"
             color="brand.white"
@@ -20,7 +20,7 @@ const Hero = () => {
                 textAlign="center"
             >
                 {" "}
-                MEET THE AFRI-PROS
+                MEET THE COMPANY
             </Text>
         </Flex>
     );

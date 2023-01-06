@@ -35,11 +35,11 @@ const NewsCard = ({ photo_name, created_at, title, slug, id }) => {
             shadow="0px 6px 12px rgba(24, 39, 75, 0.12)"
             border="1px"
             borderColor="brand.white"
-            //     maxW="328px"
+            maxW="500px"
             cursor="pointer"
             mx="auto"
         >
-            <Box w="100%" h="193px">
+            <Box w="100%" h="250px">
                 <Image
                     src={photo_name}
                     alt=""

@@ -308,7 +308,6 @@ const ContactForm = () => {
                                 <option value="0">
                                     I would like to discuss....
                                 </option>
-                                <option value="BugReport">Report a bug</option>
                                 <option value="I would like to discuss our security need">
                                     I would like to discuss our security need
                                 </option>{" "}
@@ -321,6 +320,7 @@ const ContactForm = () => {
                                 <option value="  I need some security advice">
                                     I need some security advice
                                 </option>
+                                <option value="others">Other</option>
                             </Select>
                         </FormControl>
 

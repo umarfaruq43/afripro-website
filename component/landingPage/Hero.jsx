@@ -1,9 +1,11 @@
 import { Box, Text } from "@chakra-ui/react";
+import { useRouter } from "next/router";
 import React from "react";
 import ScreenWidth from "../../Layout/ScreenWidth";
 import { ButtonFill } from "../Buttons";
 
 const Hero = () => {
+    const router = useRouter();
     return (
         <Box>
             <Box
@@ -41,6 +43,7 @@ const Hero = () => {
                                 blue={false}
                                 maxW={["full", null, "147"]}
                                 style={{ width: "100%" }}
+                                onClick={() => router.push("/contact")}
                             />
                         </Box>
                     </Box>

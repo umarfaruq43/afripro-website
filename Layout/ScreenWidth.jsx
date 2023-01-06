@@ -3,7 +3,7 @@ import React from "react";
 
 const ScreenWidth = ({ children, ...props }) => {
     return (
-        <Box {...props} maxW="1500px" mx="auto" px={["16px", "22px", "88px"]}>
+        <Box {...props} maxW="1500px" mx="auto" px={["16px", "22px", "40px"]}>
             {children}
         </Box>
     );

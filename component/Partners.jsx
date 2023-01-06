@@ -32,11 +32,11 @@ const Partners = () => {
                             maxW="592px"
                         >
                             Our diverse client portfolio ranges from SMEs to
-                            multinationals across various industries, government
-                            to non-Governmental across different geographical
-                            locations demonstrate our footprints, and trust our
-                            clients have in us to help with improving their
-                            security maturity.
+                            multinationals across various sectors, government to
+                            non-Governmental organisations across different
+                            geopolitical zones demonstrates our footprints, and
+                            the trust our clients have in us to help with
+                            improving their cyber resilience.
                         </Text>
 
                         <Text
@@ -48,9 +48,9 @@ const Partners = () => {
                             //     className="justify"
                             maxW="592px"
                         >
-                            We are known for the values we deliver for our
-                            client, and that’s why our clients trust us with the
-                            protection of their business.
+                            We are known for the values we deliver, and that’s
+                            why our clients trust us with the protection of
+                            their business.
                         </Text>
 
                         <Text
@@ -62,13 +62,14 @@ const Partners = () => {
                             //     className="justify"
                             maxW="592px"
                         >
-                            Some of our clients include:{" "}
+                            Some of our clients include SMEs, large enterprises
+                            and multinationals such as:
                         </Text>
 
                         <Text
                             align="justify"
                             mt="2"
-                            fontWeight="400"
+                            fontWeight="700"
                             fontSize={["md", null, "lg"]}
                             color="brand.light"
                             //     className="justify"

@@ -34,17 +34,17 @@ const Ambition = () => {
                             </Text>
                             <Text align="justify" mt="24px">
                                 If the answer is yes, detail your experience,
-                                qualifications and preference in your
+                                qualifications, and career objectives in your
                                 application for a great career opportunity with
-                                us. AFRI PRO SERVICES uses creative recruitment
-                                practices that ensure all applicants are
-                                carefully evaluated.{" "}
+                                us. Afri-Pro Services adopts creative
+                                recruitment practices that ensure all applicants
+                                are carefully evaluated.
                                 <Text
                                     align="justify"
                                     as="a"
                                     color="brand.orange"
                                 >
-                                    Email us CV
+                                    Email us your CV
                                 </Text>{" "}
                                 with detail your experience, qualifications and
                                 preferenc

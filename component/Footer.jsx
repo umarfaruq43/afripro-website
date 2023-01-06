@@ -12,9 +12,11 @@ import {
 import React from "react";
 import { BsEnvelopeFill, BsGeoAltFill, BsTelephoneFill } from "react-icons/bs";
 import { FaEnvelope, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { useCurrent } from "../context/Context";
 import ScreenWidth from "../Layout/ScreenWidth";
 
 const Footer = () => {
+    const { active, setActive, handleService } = useCurrent();
     return (
         <Box bgColor="brand.blue" pt="100px" pb="40px">
             <ScreenWidth>
@@ -27,14 +29,14 @@ const Footer = () => {
                     <Box minW={[null, "200px", "236px"]}>
                         <Image src="/images/LightLogo.svg" alt="" w="237px" />
                         <Text
-                            align="justify"
                             fontWeight="400"
                             fontSize="16px"
                             maxW="336px"
                             mt="20px"
                         >
-                            Afri-Pro Services protect, defend, and inform
-                            businesses to help them achieve success.
+                            Afri-Pro Services protects, defends, and advise
+                            organizations to help them achieve improved security
+                            maturity and resilience.
                         </Text>
                     </Box>
 
@@ -48,16 +50,20 @@ const Footer = () => {
                             Services
                         </Text>
                         <Flex flexDirection="column">
-                            {footerMenu.map(({ text, href }, i) => {
+                            {footerMenu.map(({ text, href, active }, i) => {
                                 return (
-                                    <Link
+                                    <Box
+                                        cursor="pointer"
                                         href={href}
                                         mb="16px"
                                         color="brand.veryDimWhite"
                                         key={i}
+                                        onClick={() =>
+                                            handleService(href, active)
+                                        }
                                     >
                                         {text}
-                                    </Link>
+                                    </Box>
                                 );
                             })}
                         </Flex>
@@ -168,8 +174,8 @@ const Footer = () => {
                         fontSize="16px"
                         textAlign="center"
                     >
-                        © Copyright 2022 AFRI-PRO. All rights reserved | Privacy
-                        Policy
+                        © Copyright 2022 Afri-Pro. All rights reserved |{" "}
+                        <Link href="/policy"   >Privacy Policy</Link>
                     </Text>
                 </Flex>
             </ScreenWidth>
@@ -183,14 +189,17 @@ const footerMenu = [
     {
         href: "/service",
         text: "Offensive Security",
+        active: 1,
     },
     {
-        href: "/service#detect",
+        href: "/service#monitoring",
         text: "Detect & Respond",
+        active: 2,
     },
     {
         href: "/service#review",
-        text: "Security Compliance",
+        text: "Security Advisory",
+        active: 3,
     },
 ];
 
