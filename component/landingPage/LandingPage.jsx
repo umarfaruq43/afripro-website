@@ -1,13 +1,12 @@
 import { Box } from "@chakra-ui/react";
 import React, { useEffect } from "react";
-import Partners from "../Partners";
+import Partners from "../PartnersHome";
 import Service from "../Service";
 import About from "./About";
 import Blog from "./Blog";
 import ContactUs from "./ContactUs";
 import Hero from "./Hero";
 import JoinTeam from "../JoinTeam";
-import Vendor from "../Vendor";
 
 const LandingPage = () => {
     return (
@@ -16,7 +15,6 @@ const LandingPage = () => {
             <Service />
             <About />
             <Partners />
-            <Vendor />
             <ContactUs />
             <Blog />
             <JoinTeam />

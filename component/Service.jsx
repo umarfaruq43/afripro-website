@@ -26,8 +26,8 @@ const Service = () => {
     };
     return (
         <Box
-            pt="24"
-            mb=""
+            pt="44px"
+            mb="88px"
             bgImage="/images/serviceIlustration.svg"
             bgSize={["100px", null, "200px"]}
             bgRepeat="no-repeat"
@@ -73,7 +73,7 @@ export default Service;
 
 const ServiceNav = ({ active, handleActive }) => {
     return (
-        <Box maxW="994px" mx="auto">
+        <Box maxW="100%" mx="auto">
             <SimpleGrid minChildWidth={["300px"]} gap="5">
                 <Button
                     mb="-3px"

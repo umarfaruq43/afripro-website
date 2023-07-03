@@ -64,7 +64,7 @@ const ContactForm = () => {
             setSubmitting(true);
 
             fetch(
-                "https://demoafriproadmin.statainsight.com/api/contact-form",
+                "https://admin.afripro.co.tz/api/contact-form",
                 {
                     method: "POST",
                     headers: {
@@ -337,7 +337,6 @@ const ContactForm = () => {
                             </FormLabel>
                             <Textarea
                                 align="justify"
-                                area
                                 id="message"
                                 placeholder="Describe your needs (optional)"
                                 type="tel"

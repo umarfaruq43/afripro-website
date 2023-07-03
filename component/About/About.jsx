@@ -8,6 +8,7 @@ import Team from "./Team";
 import WhoWeAre from "./WhoWeAre";
 import Partners from "../Partners";
 import JoinTeam from "../JoinTeam";
+import Vendor from "../Vendor";
 
 const About = () => {
     return (
@@ -15,10 +16,9 @@ const About = () => {
             <Hero />
             <WhoWeAre />
             <Operate />
-            {/* <Department /> */}
-            {/* <Report /> */}
             <Team />
             <Partners />
+            <Vendor />
             <JoinTeam />
         </Box>
     );

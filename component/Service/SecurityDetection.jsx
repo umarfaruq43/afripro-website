@@ -47,12 +47,14 @@ const Detection = () => {
                     </Text>
 
                     <Box fontSize="18px" mt="24px">
-                        <Text align="justify">
+                        <Text align="justify" mt="16px">
                             With our security monitoring service, we help
                             organizations develop an effective security
                             monitoring processes which incorporates people,
-                            processes, and technologies. At Afri-Pro, we can
-                            help your organization with analysing your needs and
+                            processes, and technologies. 
+                        </Text>
+                        <Text align="justify" mt="16px">
+                            At Afri-Pro, we can help your organization with analysing your needs and
                             requirements, choosing the right technology to meet
                             your business needs, deployment, configuration, and
                             integration of the monitoring technologies with your
@@ -61,7 +63,10 @@ const Detection = () => {
                             and detection process. In addition, we also offer
                             value added first line support to our clients across
                             different security technologies through our managed
-                            Security and SOC services team. As a value-added
+                            Security and SOC services team.
+                        </Text>
+                        <Text align="justify" mt="16px">
+                            As a value-added
                             partner of the leading technologies vendors such as
                             Microsoft, Splunk, IBM, Microfocus, Rapid 7,
                             Sumologic, AT&T, Fortinet etc, our team of
@@ -207,12 +212,14 @@ const ThreatSecurity = ({ ...props }) => {
                     </Text>
 
                     <Box fontSize="18px">
-                        <Text align="justify" mt="24px">
+                        <Text align="justify" mt="16px">
                             Our Threat Intelligence service delivers knowledge,
                             actionable information, and data about security
                             threats to our clients to help them understand
                             attack Tactics, Techniques and Procedures (TTPs) and
                             take proactive actions to protect their IT assets.
+                        </Text>
+                        <Text align="justify" mt="16px">
                             We deploy and implement the leading threat
                             intelligence platforms and integrate both opensource
                             and commercial threat feeds to enrich our client’s

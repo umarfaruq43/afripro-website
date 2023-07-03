@@ -20,7 +20,7 @@ const Hero = () => {
                 textAlign="center"
             >
                 {" "}
-                MEET THE COMPANY
+                 THE COMPANY
             </Text>
         </Flex>
     );

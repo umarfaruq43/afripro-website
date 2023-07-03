@@ -12,7 +12,7 @@ const Contact = () => {
             <Hero />
             <ContactUs />
             <Map />
-            <Partners />
+            
             <JoinTeam />
         </Box>
     );

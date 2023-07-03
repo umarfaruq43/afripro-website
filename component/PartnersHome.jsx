@@ -2,14 +2,14 @@ import { Box, Flex, Image, SimpleGrid, Text } from "@chakra-ui/react";
 import React from "react";
 import ScreenWidth from "../Layout/ScreenWidth";
 
-const Vendor = () => {
+const Partners = () => {
     return (
         <Box
             py="44px"
             bgImage="images/partnersIllustion.svg"
             bgRepeat="no-repeat"
             bgPosition="bottom left"
-            id="vendor"
+            id="portfolio"
         >
             <ScreenWidth>
                 <Flex
@@ -23,14 +23,14 @@ const Vendor = () => {
                             fontSize={["lg", null, "45px"]}
                         >
                             {" "}
-                            Our Vendor {" "}
+                            Our Client {" "}
                             <Text
                                 align="justify"
                                 as="span"
                                 color="brand.orange"
                             >
                                 {" "}
-                                Partners
+                                Portfolio
                             </Text>
                         </Text>
 
@@ -43,12 +43,12 @@ const Vendor = () => {
                             //     className="justify"
                             maxW="592px"
                         >
-                            To deliver cutting edge cybersecurity controls to
-                            our clients, we partner with the leading security
-                            vendors as a Value-Added Reseller/ System Integrator
-                            for the East Africa and Africa region. A
-                            non-exhaustive list of some of our vendor partners
-                            include:
+                            Our diverse client portfolio ranges from SMEs to
+                            multinationals across various sectors, government to
+                            non-Governmental organisations across different
+                            geopolitical zones demonstrates our footprints, and
+                            the trust our clients have in us to help with
+                            improving their cyber resilience.
                         </Text>
 
                         <Text
@@ -60,12 +60,35 @@ const Vendor = () => {
                             //     className="justify"
                             maxW="592px"
                         >
-                            Imperva, Tenable, Symantec, AT&T Cybersecurity
-                            (Alien Vault), Darktrace, Palo alto, Fortinet, IBM,
-                            Centrify, Proofpoint, Netskope, Knowbe4, Manage
-                            Engine, Cynet, Crowd Strike, Titus, Fortinet,
-                            Microsoft Security, Google Cloud, Fore Scout, Titus,
-                            Mimecast amongst others
+                            We are known for the values we deliver, and that’s
+                            why our clients trust us with the protection of
+                            their business.
+                        </Text>
+
+                        <Text
+                            align="justify"
+                            mt="2"
+                            fontWeight="400"
+                            fontSize={["md", null, "lg"]}
+                            color="brand.light"
+                            //     className="justify"
+                            maxW="592px"
+                        >
+                            Some of our clients include SMEs, large enterprises
+                            and multinationals such as:
+                        </Text>
+
+                        <Text
+                            align="justify"
+                            mt="2"
+                            fontWeight="700"
+                            fontSize={["md", null, "lg"]}
+                            color="brand.light"
+                            //     className="justify"
+                            maxW="592px"
+                        >
+                            Vodacom, Finca, Exim Bank, NBC, NAPSA, Stanbic,
+                            Cloudware Technologies, TCRA, KoloPay.
                         </Text>
                     </Box>
                     <Flex
@@ -76,7 +99,17 @@ const Vendor = () => {
                         flexWrap="wrap"
                         justify="space-between"
                     >
-                        <Image src="/images/landingPage/vendor.jpeg" alt="" />
+                        {logos.map((logo, i) => {
+                            return (
+                                <Image
+                                    key={i}
+                                    src={logo.images}
+                                    alt=""
+                                    w={["40%", "", "20%"]}
+                                    h={["42px", "85px"]}
+                                />
+                            );
+                        })}
                     </Flex>
                 </Flex>
             </ScreenWidth>
@@ -84,10 +117,10 @@ const Vendor = () => {
     );
 };
 
-export default Vendor;
+export default Partners;
 
 const logos = [
-    { href: "#", images: "/images/partners/vodafone.svg" },
+    { href: "#", images: "/images/partners/vode.png" },
     { href: "#", images: "/images/partners/finca.svg" },
     { href: "#", images: "/images/partners/exim.svg" },
     { href: "#", images: "/images/partners/kolo.svg" },

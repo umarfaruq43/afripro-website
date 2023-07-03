@@ -107,6 +107,8 @@ const VulnerabilityAssessments = ({ ...others }) => {
                                 non-intrusive, automated, and regular test of
                                 our clients IT systems to identify security
                                 gaps, loopholes in your systems and networks.
+                            </Text>
+                            <Text align="justify" mt="16px">
                                 The severity and overall risks of these
                                 vulnerabilities are then measured and presented
                                 to our clients with the applicable
@@ -171,7 +173,10 @@ const WebAndMobile = ({ ...others }) => {
                                 identify flaws or security gaps that may allow
                                 for the security of website or web applications
                                 to be compromised, putting sensitive data at
-                                risk. This service offering from Afri-Pro
+                                risk.
+                            </Text>
+                            <Text align="justify" mt="16px">
+                                This service offering from Afri-Pro
                                 services covers Web technologies, mobile
                                 applications, APIs and everything in between, we
                                 can provide you with extensive testing on all of
@@ -227,7 +232,10 @@ const Network = ({ ...others }) => {
                                 your internal infrastructure. The test is
                                 designed to help you reduce the risks that are
                                 posed by individuals who have access to your
-                                private internal network. Our consultants will
+                                private internal network.
+                            </Text>
+                            <Text align="justify" mt="16px">
+                                Our consultants will
                                 simulate an insider attack to explore how far
                                 into your internal infrastructure an insider can
                                 get while remaining undetected. The internal
@@ -294,10 +302,13 @@ const Cloud = ({ ...others }) => {
                                 highlight weaknesses that may lead to the
                                 compromise of your cloud environment, and
                                 systems and infrastructure hosted in your cloud
-                                environment. With this service, we review both
+                                environment. 
+                            </Text>
+                            <Text align="justify" mt="16px">
+                                With this service, we review both
                                 public and private cloud environment, by
                                 focusing on the cloud specific aspects, as well
-                                as the applications and. Infrastructure hosted
+                                as the applications and Infrastructure hosted
                                 within the cloud instance.
                             </Text>
                         </Box>
@@ -333,14 +344,6 @@ const Device = ({ ...others }) => {
                                 Network Devices Assessment
                             </Text>
                             <Text align="justify" color="" mt="16px">
-                                {/* We focus on the configuration review of
-
-				
-                                networking devices such as routers, switches,
-                                load balancers, firewalls etc, by focusing on
-                                the device OS, port security, access control,
-                                protocols allowed, device authentication,
-                                services running etc. */}
                                 Our network device assessment focuses on the
                                 configuration review of networking devices such
                                 as routers, switches, load balancers, firewalls
@@ -350,14 +353,6 @@ const Device = ({ ...others }) => {
                             </Text>
 
                             <Text align="justify" mt="16px">
-                                {/* Our consultants conduct a comprehensive
-                                inspection of all the services and software
-                                running on the devices, to ensure that OS are
-                                updated, required security patches are
-                                installed, required access controls are in
-                                place, and ports are adequately secured and
-                                configured, and only required ports and services
-                                are enabled. */}
                                 Our consultants conduct a comprehensive
                                 inspection of all the services and software
                                 running on the devices, to ensure that OS are

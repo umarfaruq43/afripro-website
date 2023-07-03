@@ -123,23 +123,23 @@ const Footer = () => {
                             >
                                 <Flex align="center" gap="12px">
                                     <Icon as={BsTelephoneFill} />{" "}
-                                    <Text align="justify">+255746721790</Text>
+                                    <Text align="justify">+255 746 721 790</Text>
                                 </Flex>
                             </Link>
-
-                            {/* <Link
-                                href="https://www.linkedin.com/company/afri-pro-services/about/?viewAsMember=true"
+                            <Link
+                                href="tel:+255789121119"
                                 mb="16px"
                                 color="brand.veryDimWhite"
                             >
                                 <Flex align="center" gap="12px">
-                                    <Icon as={BsGeoAltFill} />{" "}
-                                    <Text align="justify">Location</Text>
+                                    <Icon as={BsTelephoneFill} />{" "}
+                                    <Text align="justify">+255 789 121 119</Text>
                                 </Flex>
-                            </Link> */}
+                            </Link>
 
                             <Link
                                 href="https://www.linkedin.com/company/afri-pro-services/about/?viewAsMember=true"
+                                target="_new"
                                 mb="16px"
                                 color="brand.veryDimWhite"
                             >
@@ -153,6 +153,7 @@ const Footer = () => {
                                 mb="16px"
                                 color="brand.veryDimWhite"
                                 href="https://twitter.com/AfriProServices"
+                                target="_blank"
                             >
                                 <Flex align="center" gap="12px">
                                     <Icon as={FaTwitter} />{" "}

@@ -14,7 +14,7 @@ const FullNews = (props) => {
     const [content, setContent] = useState(null);
 
     useEffect(() => {
-        fetch("https://demoafriproadmin.statainsight.com/api/other-blog")
+        fetch("https://admin.afripro.co.tz/api/other-blog")
             .then((res) => res.json())
             .then((data) => data && setOthers(data.other_blogs));
     }, []);
@@ -149,9 +149,7 @@ const ReadCard = ({ photo_name, created_at, title, slug, id }) => {
 
 // Generate static paths
 export async function getStaticPaths() {
-    const res = await fetch(
-        "https://demoafriproadmin.statainsight.com/api/blog"
-    );
+    const res = await fetch("https://admin.afripro.co.tz/api/blog");
 
     const posts = await res.json();
 
@@ -171,9 +169,7 @@ export async function getStaticProps({ params }) {
     // Call an external API endpoint to get posts.
     // You can use any data fetching library
     let mainPosts;
-    const res = await fetch(
-        "https://demoafriproadmin.statainsight.com/api/blog"
-    );
+    const res = await fetch("https://admin.afripro.co.tz/api/blog");
     const posts = await res.json();
     let postData = posts.blogs;
     postData.map((p) => {

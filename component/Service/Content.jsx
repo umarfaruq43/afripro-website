@@ -73,7 +73,8 @@ const ServiceNav = ({ active, handleActive }) => {
                 <Button
                     mb="-3px"
                     w="100%"
-                    h="54px"
+                    h="64px"
+                    fontSize={["20px",,"22px"]}
                     py="16px"
                     px={["20px", null, "36px"]}
                     textTransform="uppercase"
@@ -108,7 +109,8 @@ const ServiceNav = ({ active, handleActive }) => {
                     // minW="350px"
                     mb="-3px"
                     w="100%"
-                    h="54px"
+                    h="64px"
+                    fontSize={["20px",,"22px"]}
                     py="16px"
                     px={["20px", null, "36px"]}
                     textTransform="uppercase"
@@ -143,7 +145,8 @@ const ServiceNav = ({ active, handleActive }) => {
                     // minW="350px"
                     mb="-3px"
                     w="100%"
-                    h="54px"
+                    h="64px"
+                    fontSize={["20px",,"22px"]}
                     py="16px"
                     px={["20px", null, "36px"]}
                     textTransform="uppercase"

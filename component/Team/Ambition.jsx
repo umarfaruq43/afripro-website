@@ -38,7 +38,7 @@ const Ambition = () => {
                                 application for a great career opportunity with
                                 us. Afri-Pro Services adopts creative
                                 recruitment practices that ensure all applicants
-                                are carefully evaluated.
+                                are carefully evaluated. {" "}
                                 <Text
                                     align="justify"
                                     as="a"
@@ -46,8 +46,7 @@ const Ambition = () => {
                                 >
                                     Email us your CV
                                 </Text>{" "}
-                                with detail your experience, qualifications and
-                                preferenc
+                                
                             </Text>
                             <Box mt="40px">
                                 <Link

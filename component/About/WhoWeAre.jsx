@@ -5,7 +5,7 @@ import ScreenWidth from "../../Layout/ScreenWidth";
 const WhoWeAre = () => {
     return (
         <Box
-            py="96px"
+            py="46px"
             bgImage={[
                 "images/about/MWhoBackground.svg",
                 null,
@@ -15,7 +15,7 @@ const WhoWeAre = () => {
             bgSize={["cover", "cover"]}
             bgRepeat="no-repeat"
         >
-            <ScreenWidth>
+            {/* <ScreenWidth> */}
                 <Flex flexDir={["column", null, "row"]} gap="32px">
                     <Flex
                         w={["100%", null, "50%"]}
@@ -24,23 +24,37 @@ const WhoWeAre = () => {
                     >
                         <Box>
                             <Text
-                                align="justify"
-                                fontWeight="700"
-                                mb={["16px", null, "24px"]}
-                                fontSize={["24px", null, "36px"]}
-                            >
-                                {" "}
-                                Who we are
-                            </Text>
+                                    align="justify"
+                                    fontWeight="700"
+                                    mb="8px"
+                                    fontSize={["24px", null, "36px"]}
+                                >
+                                    {" "}
+                                    Who We{" "}
+                                    <Text
+                                        align="justify"
+                                        as="span"
+                                        color="brand.orange"
+                                    >
+                                        {" "}
+                                        Are
+                                    </Text>
+                                </Text>
+
                             <Box maxW={["100%", null, "612px"]}>
-                                <Text align="justify">
+                                <Text 
+                                    align="justify"
+                                >
                                     Afri-Pro Services Ltd is a technology
                                     oriented professional services firm fully
                                     focused on delivering expert cybersecurity
                                     and digital services to clients of different
                                     sizes across various industries.
                                 </Text>
-                                <Text align="justify">
+                                <Text 
+                                align="justify"
+                                mt="16px"
+                                >
                                     Our industry leading team of experienced
                                     consultants deliver end-to-end cyber
                                     capabilities, either as bespoke engagements
@@ -53,7 +67,10 @@ const WhoWeAre = () => {
                                     withstand, cyber-attacks.
                                 </Text>
 
-                                <Text align="justify">
+                                <Text 
+                                align="justify"
+                                mt="16px"
+                                >
                                     As a provider of advanced cyber security
                                     services, we are fully focussed on
                                     delivering expert services of world class
@@ -80,7 +97,7 @@ const WhoWeAre = () => {
                         />
                     </Flex>
                 </Flex>
-            </ScreenWidth>
+            {/* </ScreenWidth> */}
         </Box>
     );
 };

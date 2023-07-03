@@ -13,9 +13,7 @@ const blog = ({ news }) => {
 // This gets called on every request
 export async function getServerSideProps(context) {
     // Fetch data from external API
-    const res = await fetch(
-        `https://demoafriproadmin.statainsight.com/api/blog`
-    );
+    const res = await fetch(`https://admin.afripro.co.tz/api/blog`);
     let data = await res.json();
 
     let news = data.blogs;

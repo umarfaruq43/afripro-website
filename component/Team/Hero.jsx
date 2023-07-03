@@ -25,8 +25,12 @@ const Hero = () => {
                         {" "}
                         Join the Team
                     </Text>
-                    <Text align="justify" fontSize="20px" fontWeight="400">
-                        We are Afri-Pro Services
+                    <Text
+                        align="justify"
+                        textAlign="center"
+                        fontSize="20px"
+                        fontWeight="400"
+                    >
                     </Text>
                 </Box>
             </Flex>

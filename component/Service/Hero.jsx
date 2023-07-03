@@ -9,7 +9,7 @@ const Hero = () => {
                 bgImage="/images/service/herobg.png"
                 bgPosition="center"
                 bgSize="cover"
-                h={["428px", null, "512px"]}
+                h={["", null, "400px"]}
                 align="center"
                 justify="center"
                 color="brand.white"

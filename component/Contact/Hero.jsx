@@ -38,7 +38,7 @@ const Hero = () => {
                     </Text>
                     <Box mt={["48px", null, "32px"]} textAlign="center">
                         <Link
-                            href="tel:+2345676788909"
+                            href="tel:+255754711278"
                             _hover={{ textDecor: "none" }}
                         >
                             <ButtonFill

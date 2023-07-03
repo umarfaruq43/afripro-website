@@ -30,7 +30,8 @@ const Layout = ({ children, title }) => {
             <Head>
                 <title>{title}</title>
                 <meta name="description" content="Afri-Pro" />
-                <link rel="icon" href="/favicon.ico" />
+                <link rel="icon" href="/fav-icon.png" />
+                {/* <link rel="icon" href="/images/marker-icon.png" /> */}
             </Head>
             <Box fontFamily="dmSans">
                 <Navbar navbarColor={navbarColor} />

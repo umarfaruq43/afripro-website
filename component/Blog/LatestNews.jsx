@@ -25,7 +25,7 @@ const LatestNews = ({ news }) => {
                         fontSize={["4l", null, "4xl"]}
                         fontWeight={["700", null, "400"]}
                     >
-                        Latest News
+                        Latest
                     </Text>
                     {/* News ======>> */}
                     <Box pt="40px">

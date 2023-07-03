@@ -101,7 +101,7 @@ const DesktopNav = ({ navbarColor }) => {
                             // p={2}
                             display="flex"
                             align="center"
-                            href={navItem.href ?? "#"}
+                            // href={navItem.href ?? "#"}
                             fontSize="14px"
                             fontWeight={500}
                             bg="transparent"
@@ -163,7 +163,7 @@ const DesktopNav = ({ navbarColor }) => {
                             // p={2}
                             display="flex"
                             align="center"
-                            href={item.href ?? "#"}
+                            // href={item.href ?? "#"}
                             fontSize="14px"
                             fontWeight={500}
                             bg="transparent"
@@ -333,7 +333,7 @@ const DesktopNav = ({ navbarColor }) => {
                             // p={2}
                             display="flex"
                             align="center"
-                            href={navItem.href ?? "#"}
+                            // href={navItem.href ?? "#"}
                             fontSize="14px"
                             fontWeight={500}
                             bg="transparent"
@@ -469,12 +469,13 @@ const DesktopNav = ({ navbarColor }) => {
 };
 
 const MobileNav = ({ navbarColor }) => {
+    const { active, setActive, handleService } = useCurrent();
     return (
         <Stack p={4} display={{ md: "none" }} w="100%">
             {NAV_ITEMS.map((navItem) => (
                 <MobileNavItem
                     key={navItem.label}
-                    {...navItem}
+                    navItem={navItem}
                     navbarColor={navbarColor}
                 />
             ))}
@@ -492,15 +493,16 @@ const MobileNav = ({ navbarColor }) => {
 };
 
 // This function is for the navbar items on moblie visualViewport.
-const MobileNavItem = ({ label, href, navbarColor }) => {
+const MobileNavItem = ({ navItem }) => {
+    const { label, href, navbarColor } = navItem;
     const { isOpen, onToggle } = useDisclosure();
-
+    const { active, setActive, handleService } = useCurrent();
     return (
         <Stack spacing={4} w="100%">
             <Flex
                 py={2}
-                as={Link}
-                href={href ?? "#"}
+                // as={"a"}
+                // href={href ?? "#"}
                 justify={"space-between"}
                 align={"center"}
                 color={navbarColor ? "brand.blue" : "brand.white"}
@@ -520,7 +522,7 @@ const MobileNavItem = ({ label, href, navbarColor }) => {
                                 // p={2}
                                 display="flex"
                                 align="center"
-                                href={navItem.href ?? "#"}
+                                // href={navItem.href ?? "#"}
                                 fontSize="14px"
                                 fontWeight={500}
                                 bg="transparent"
@@ -585,7 +587,7 @@ const MobileNavItem = ({ label, href, navbarColor }) => {
                                 // p={2}
                                 display="flex"
                                 align="center"
-                                href={item.href ?? "#"}
+                                // href={item.href ?? "#"}
                                 fontSize="14px"
                                 fontWeight={500}
                                 bg="transparent"
@@ -776,7 +778,7 @@ const MobileNavItem = ({ label, href, navbarColor }) => {
                                 // p={2}
                                 display="flex"
                                 align="center"
-                                href={navItem.href ?? "#"}
+                                // href={navItem.href ?? "#"}
                                 fontSize="14px"
                                 fontWeight={500}
                                 bg="transparent"
@@ -860,7 +862,7 @@ const NAV_ITEMS = [
 
             {
                 label: "Our Vendor Partners",
-                href: "/#vendor",
+                href: "/about#vendor",
             },
         ],
     },

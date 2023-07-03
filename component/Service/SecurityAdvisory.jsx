@@ -50,18 +50,24 @@ const CyberSecurity = () => {
                     </Text>
 
                     <Box fontSize="18px">
-                        <Text align="justify" mt="24px">
+                        <Text align="justify" mt="16px">
                             Our team of experienced consultant delivers a
                             comprehensive review of an organization’s security
                             posture against the requirements of international
                             best practice security standards and frameworks such
-                            as NIST CSF, ISO27001, CIS Top 18. We deliver the
+                            as NIST CSF, ISO27001, CIS Top 18.
+                        </Text>
+                        <Text align="justify" mt="16px">
+                            We deliver the
                             review of your organization’s security controls from
                             the perspective of people, processes, and
                             technologies, to get visibility of your
                             organization’s security maturity and posture and
                             identify areas of improvements to help your
-                            organization improve management. From the output of
+                            organization improve management. 
+                        </Text>
+                        <Text align="justify" mt="16px">
+                            From the output of
                             the security review, we can help your organization
                             with the development of comprehensive cyber security
                             management program, strategies, and roadmaps to help
@@ -105,7 +111,7 @@ const SecurityStandards = ({ ...props }) => {
                     </Text>
 
                     <Box fontSize="18px">
-                        <Text align="justify" mt="24px">
+                        <Text align="justify" mt="16px">
                             Our Security Standards Implementation and
                             Certification services focus on helping our clients
                             with developing a comprehensive enterprise-wide
@@ -113,7 +119,10 @@ const SecurityStandards = ({ ...props }) => {
                             with best practice standards. Our service looks at
                             helping our clients comply and align with best
                             practice frameworks and standards such as NIST, CIS,
-                            ISO27001, IS022301, GDPR, and PCI DSS. We offer
+                            ISO27001, IS022301, GDPR, and PCI DSS.
+                        </Text>
+                        <Text align="justify" mt="16px">
+                            We offer
                             services such as gap assessment against the
                             identified standard and frameworks, we help
                             organisations with the implementation of the
@@ -219,7 +228,10 @@ const StaffAugmentation = ({ ...props }) => {
                             organizations to provide a full range of technical
                             expertise in areas such as project management,
                             Security Engineering, Security Analysis, CISO as a
-                            Service, etc. Our staff augmentation services
+                            Service, etc.
+                        </Text>
+                        <Text align="justify" mt="16px">
+                            Our staff augmentation services
                             approach reduces risk and allows us to deliver our
                             clients projects in a consistent and improved
                             manner, no matter what stage of the project
@@ -229,14 +241,17 @@ const StaffAugmentation = ({ ...props }) => {
                             that has helped us successfully deliver some of the
                             {"industry's"} most complex projects the world over.
                         </Text>
-                        <Text align="justify" mt="8px">
+                        <Text align="justify" mt="16px">
                             As a boutique sized company, we can be far more
                             competitive, providing tailored services compared
                             with many of our competitors to the benefits of our
                             clients. Most importantly our project management
                             team will provide the individual hands-on care plus
                             our complete attention to ensure assigned tasks and
-                            project deliverables run smoothly. We have the
+                            project deliverables run smoothly.
+                        </Text>
+                        <Text align="justify" mt="16px">
+                            We have the
                             experience to anticipate and react to any potential
                             problems before they arise to result in a seamless
                             project delivery that fits with the needs of every

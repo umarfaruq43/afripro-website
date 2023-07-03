@@ -7,7 +7,7 @@ import NewsCard from "../NewsCard";
 const Blog = () => {
     const [news, setNews] = useState(null);
     useEffect(() => {
-        fetch("https://demoafriproadmin.statainsight.com/api/flash-blog")
+        fetch("https://admin.afripro.co.tz/api/recent-blog")
             .then((res) => res.json())
             .then((data) => setNews(data));
     }, []);
@@ -33,13 +33,13 @@ const Blog = () => {
                             fontWeight="500"
                             fontSize={["24px", null, "36px"]}
                         >
-                            Latest News
+                            Latest
                         </Text>
                     </Box>
                     <Box mt="40px">
                         <SimpleGrid minChildWidth="250px" gap="40px">
                             {news &&
-                                news.flash_blogs.map(
+                                news.recent_blogs.map(
                                     ({
                                         photo_name,
                                         created_at,

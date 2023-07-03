@@ -37,37 +37,19 @@ const Map = () => {
                             align="justify"
                             color="brand.orange"
                             fontWeight="500"
-                            fontSize={["sm", null, "xl"]}
+                            fontSize="27px"
                         >
-                            Our Location
+                            Our Office Addresses
                         </Text>
-                        <Text
-                            align="justify"
-                            fontWeight="700"
-                            color="brand.blue"
-                            fontSize={["2xl", null, "5xl"]}
-                        >
-                            You can find us anytime
-                        </Text>
-
-                        {/* <Box my="40px">
-                            <Link href="#">
-                                <ButtonFill
-                                    blue="true"
-                                    icon="location"
-                                    text="GET DIRECTION"
-                                />
-                            </Link>
-                        </Box> */}
 
                         <Box>
-                            <Text
+                        <Text
                                 align="justify"
                                 fontWeight="700"
-                                fontSize="22px"
+                                fontSize="20px"
                                 mb="16px"
                             >
-                                Contact us
+                                TANZANIA
                             </Text>
                             <Flex flexDirection="column">
                                 <Link
@@ -95,6 +77,18 @@ const Map = () => {
                                         </Text>
                                     </Flex>
                                 </Link>
+                                <Link
+                                    href="tel:+255746721790"
+                                    mb="16px"
+                                    color="brand.blue"
+                                >
+                                    <Flex align="center" gap="12px">
+                                        <Icon as={BsTelephoneFill} />{" "}
+                                        <Text align="justify" fontSize="16px">
+                                            +255 746 721 790
+                                        </Text>
+                                    </Flex>
+                                </Link>
 
                                 <Link href="#" mb="16px" color="brand.blue">
                                     <Flex gap="12px">
@@ -107,6 +101,61 @@ const Map = () => {
                                             3rd Floor Green {`Acer's`} House,
                                             Plot 45, Old Bagamoyo Road, Dar es
                                             Salaam
+                                        </Text>
+                                    </Flex>
+                                </Link>
+                            </Flex>
+                        </Box>
+
+                        <Box>
+                        <Text
+                                align="justify"
+                                fontWeight="700"
+                                fontSize="20px"
+                                mb="16px"
+                            >
+                                UNITED KINGDOM
+                            </Text>
+                            <Flex flexDirection="column">
+                                <Link
+                                    href="mailto:info@afripro.co.tz"
+                                    mb="16px"
+                                    color="brand.blue"
+                                >
+                                    <Flex align="center" gap="12px">
+                                        <Icon as={BsEnvelopeFill} />{" "}
+                                        <Text align="justify" fontSize="16px">
+                                            info@afripro.co.tz
+                                        </Text>
+                                    </Flex>
+                                </Link>
+
+                                <Link
+                                    href="tel:+447935295089"
+                                    mb="16px"
+                                    color="brand.blue"
+                                >
+                                    <Flex align="center" gap="12px">
+                                        <Icon as={BsTelephoneFill} />{" "}
+                                        <Text align="justify" fontSize="16px">
+                                            +44 7935 295089
+                                        </Text>
+                                    </Flex>
+                                </Link>
+
+                                <Link href="#" mb="16px" color="brand.blue">
+                                    <Flex gap="12px">
+                                        <Icon as={BsGeoAltFill} />{" "}
+                                        <Text
+                                            align="justify"
+                                            fontSize="16px"
+                                            maxW="228px"
+                                        >
+                                            Building 3 Chiswick Park,
+                                            566 Chiswick High Street London
+                                            Greater London
+                                            W4 5YA
+                                            United Kingdom
                                         </Text>
                                     </Flex>
                                 </Link>

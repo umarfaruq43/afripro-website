@@ -5,7 +5,7 @@ import ScreenWidth from "../Layout/ScreenWidth";
 const Partners = () => {
     return (
         <Box
-            py="24"
+            py="44px"
             bgImage="images/partnersIllustion.svg"
             bgRepeat="no-repeat"
             bgPosition="bottom left"
@@ -17,9 +17,41 @@ const Partners = () => {
                     flexDir={["column", null, "row"]}
                     align="center"
                 >
+                    <Flex
+                        p="10"
+                        mt={["5", "10"]}
+                        gap={["32px", null, "20px"]}
+                        w={["100%", null, "50%"]}
+                        flexWrap="wrap"
+                        justify="space-between"
+                    >
+                        {logos.map((logo, i) => {
+                            return (
+                                <Image
+                                    key={i}
+                                    src={logo.images}
+                                    alt=""
+                                    w={["40%", "", "20%"]}
+                                    h={["42px", "85px"]}
+                                />
+                            );
+                        })}
+                    </Flex>
                     <Box w={["100%", null, "50%"]}>
-                        <Text fontWeight="700" fontSize={["lg", null, "45px"]}>
-                            Our Client Portfolio
+                        <Text
+                            fontWeight="700" 
+                            fontSize={["lg", null, "45px"]}
+                        >
+                            {" "}
+                            Our Client {" "}
+                            <Text
+                                align="justify"
+                                as="span"
+                                color="brand.orange"
+                            >
+                                {" "}
+                                Portfolio
+                            </Text>
                         </Text>
 
                         <Text
@@ -76,29 +108,9 @@ const Partners = () => {
                             maxW="592px"
                         >
                             Vodacom, Finca, Exim Bank, NBC, NAPSA, Stanbic,
-                            Cloudware Technologies, TCRA, KoloPay
+                            Cloudware Technologies, TCRA, KoloPay.
                         </Text>
                     </Box>
-                    <Flex
-                        p="10"
-                        mt={["5", "10"]}
-                        gap={["32px", null, "20px"]}
-                        w={["100%", null, "50%"]}
-                        flexWrap="wrap"
-                        justify="space-between"
-                    >
-                        {logos.map((logo, i) => {
-                            return (
-                                <Image
-                                    key={i}
-                                    src={logo.images}
-                                    alt=""
-                                    w={["40%", "", "20%"]}
-                                    h={["42px", "85px"]}
-                                />
-                            );
-                        })}
-                    </Flex>
                 </Flex>
             </ScreenWidth>
         </Box>
@@ -108,7 +120,7 @@ const Partners = () => {
 export default Partners;
 
 const logos = [
-    { href: "#", images: "/images/partners/vodafone.svg" },
+    { href: "#", images: "/images/partners/vode.png" },
     { href: "#", images: "/images/partners/finca.svg" },
     { href: "#", images: "/images/partners/exim.svg" },
     { href: "#", images: "/images/partners/kolo.svg" },
